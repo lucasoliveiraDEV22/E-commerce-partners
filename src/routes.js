@@ -1,9 +1,14 @@
 import { Router } from 'express'
 
+
+
+
+
 const routes = new Router()
 
-routes.get('/', (request, response) => {
-  return response.json({ message: 'Hello World' })
+routes.get('/', async (request, response) => {
+  
+  return response.json(user)
 })
 
 export default routes
